@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:id="@+id/Layout_Results"
-        android:layout_width="396dp"
-        android:layout_height="101dp"
+        android:layout_width="393dp"
+        android:layout_height="204dp"
         android:layout_margin="15dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,6 +33,7 @@
 
     <LinearLayout
         android:id="@+id/Layout_Inputs"
+        style="@style/Lainasovelluksen_harmaa_tyyli"
         android:layout_width="411dp"
         android:layout_height="197dp"
         android:orientation="vertical"
