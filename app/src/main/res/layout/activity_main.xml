@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:id="@+id/Layout_Results"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="396dp"
+        android:layout_height="101dp"
         android:layout_margin="15dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,14 +21,13 @@
 
         <TextView
             android:id="@+id/tvResults"
-            style="@style/Lainasovelluksen_harmaa_tyyli"
             android:layout_width="match_parent"
-            android:layout_height="128dp"
-            android:hint="Tulokset"
+            android:layout_height="wrap_content"
+            android:maxLines="20"
             android:minHeight="48dp"
             android:text="@string/results"
             android:textAlignment="center"
-            android:textColor="#90BABA"
+            android:textColor="#00838F"
             android:textColorHint="#3D3D3D" />
     </LinearLayout>
 
@@ -47,8 +46,7 @@
         <EditText
             android:id="@+id/etLoanAmount"
             style="@style/Lainasovelluksen_harmaa_tyyli"
-            android:hint="Lainan määrä"
-            android:text="@string/loan_amount" />
+            android:hint="@string/loan_amount" />
 
         <EditText
             android:id="@+id/etLoanDuration"
@@ -56,10 +54,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Lainan pituus"
+            android:hint="@string/loan_duration"
             android:inputType="number"
             android:minHeight="48dp"
-            android:text="@string/loan_duration"
             android:textAlignment="center"
             android:textColor="#3D3D3D"
             android:textColorHint="#3D3D3D" />
@@ -69,9 +66,8 @@
             style="@style/Lainasovelluksen_harmaa_tyyli"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Lainan korko"
+            android:hint="@string/interest_rate"
             android:minHeight="48dp"
-            android:text="@string/interest_rate"
             android:textAlignment="center"
             android:textColor="#3D3D3D"
             android:textColorHint="#3D3D3D" />
@@ -81,8 +77,10 @@
             style="@style/Lainasovelluksen_harmaa_tyyli"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:indeterminate="false"
             android:minHeight="48dp"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:visibility="visible" />
 
     </LinearLayout>
 

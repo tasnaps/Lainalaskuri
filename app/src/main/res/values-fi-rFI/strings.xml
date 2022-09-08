@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lainalaskuri</string>
+    <string name="loan_amount">Lainan määrä:</string>
+    <string name="interest_rate">Lainan Korko:</string>
+    <string name="loan_duration">Lainan kesto:</string>
+    <string name="payable_interest">Maksettava korko:</string>
+    <string name="payable_total">Kokonaishinta:</string>
+    <string name="loan_info">Lainan tiedot</string>
+    <string name="results">Tulokset</string>
+    <string name="testi">testi</string>
+</resources>
