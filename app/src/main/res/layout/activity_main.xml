@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Layout_Results"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026">
+
+        <TextView
+            android:id="@+id/tvResults"
+            style="@style/Lainasovelluksen_harmaa_tyyli"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:hint="Tulokset"
+            android:minHeight="48dp"
+            android:text="@string/results"
+            android:textAlignment="center"
+            android:textColor="#90BABA"
+            android:textColorHint="#3D3D3D" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Layout_Inputs"
+        android:layout_width="411dp"
+        android:layout_height="197dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/etLoanAmount"
+            style="@style/Lainasovelluksen_harmaa_tyyli"
+            android:hint="Lainan määrä"
+            android:text="@string/loan_amount" />
+
+        <EditText
+            android:id="@+id/etLoanDuration"
+            style="@style/Lainasovelluksen_harmaa_tyyli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Lainan pituus"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text="@string/loan_duration"
+            android:textAlignment="center"
+            android:textColor="#3D3D3D"
+            android:textColorHint="#3D3D3D" />
+
+        <TextView
+            android:id="@+id/tvInterestRate"
+            style="@style/Lainasovelluksen_harmaa_tyyli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lainan korko"
+            android:minHeight="48dp"
+            android:text="@string/interest_rate"
+            android:textAlignment="center"
+            android:textColor="#3D3D3D"
+            android:textColorHint="#3D3D3D" />
+
+        <SeekBar
+            android:id="@+id/sbLoanInterest"
+            style="@style/Lainasovelluksen_harmaa_tyyli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lainalaskuri</string>
+
+
+
+    <string name="loan_amount">Loan amount:</string>
+    <string name="interest_rate">Interest rate</string>
+    <string name="loan_duration">Loan duration (Months)</string>
+    <string name="payable_interest">Payable Interest:</string>
+    <string name="payable_total">Payable total</string>
+    <string name="loan_info">Loan information</string>
+    <string name="results">Results:</string>
+</resources>
